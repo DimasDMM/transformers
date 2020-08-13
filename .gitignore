@@ -1,0 +1,11 @@
+__pycache__/
+.ipynb_checkpoints/
+
+# MacOS
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+$RECYCLE.BIN/
