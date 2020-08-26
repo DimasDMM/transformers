@@ -1,5 +1,7 @@
 __pycache__/
 .ipynb_checkpoints/
+artifacts/
+data/
 
 # MacOS
 .DS_Store
