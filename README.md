@@ -1,23 +1,23 @@
-# Infer masked token with BERT
+# Experiments with BERT and Transformers
 
-## Introduction
+## Infer masked token with BERT
 
-BERT, or Bidirectional Encoder Representations from Transformers, is a new method of pre-training language representations which obtains state-of-the-art results on a wide array of Natural Language Processing (NLP) tasks.
+### Description
 
-In order to train a deep bidirectional representation in BERT, the authors  masked some input tokens randomly, and then predict those masked tokens. This procedure is known as a **masked LM** (MLM).
+BERT's authors trained it in two tasks and one of them is **Masked Language Model** (MLM). The task consists of mask some input tokens randomly, and then try to predict those random tokens. Hence, we do not need to pretrain BERT and we can directly test it,
 
 In this repository, I have implemented **a basic script to infer the masked token** in a sentence.
 
 Read the BERT paper: https://arxiv.org/pdf/1810.04805.pdf
 
-## Code
+### Code
 
 With this repository, there are some commands in Bash to run the Python code in a Docker container. Anyway, you can find all the Python scripts at [./code](./code)
 
 You can see the code execution step by step in the notebooks (see folder [./notebooks](./notebooks)). Additionally, the notebooks are available at Kaggle:
 - https://www.kaggle.com/dimasmunoz/infer-masked-token-with-bert
 
-## Commands
+### Commands
 
 > Note: These commands have been tested in MacOS and Git Bash (Windows).
 
@@ -50,5 +50,18 @@ common 0.01419056300073862
 
 ...
 ```
+
+## Question-answering with BERT
+
+### Description
+
+In Question-Answering tasks, the model receives a text and a question regarding to the text, and it should mark the beginning and end of the answer in the text.
+
+In this case, it is necessary to fine-tune BERT. We will use XQuAD (Cross-lingual Question Answering Dataset) to fine-tune it, which consists of a subset of 240 paragraphs and 1190 question-answer pairs from the development set of SQuAD v1.1 together with their professional translations into 10 languages. Source: https://github.com/deepmind/xquad
+
+### Code
+
+You can see the code execution step by step in the notebooks (see folder [./notebooks](./notebooks)).
+
 
 Have fun! ᕙ (° ~ ° ~)
