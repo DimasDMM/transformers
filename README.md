@@ -1,4 +1,4 @@
-# Experiments with BERT and Transformers
+# Experiments with Transformers
 
 ## Infer masked token with BERT
 
@@ -14,7 +14,7 @@ Read the BERT paper: https://arxiv.org/pdf/1810.04805.pdf
 
 With this repository, there are some commands in Bash to run the Python code in a Docker container. Anyway, you can find all the Python scripts at [./code](./code)
 
-You can see the code execution step by step in the notebooks (see folder [./notebooks](./notebooks)). Additionally, the notebooks are available at Kaggle:
+You can see the code execution step by step in the notebook [Infer masked token with BERT](./notebooks/Infer-masked-token-with-BERT.ipynb). Additionally, the notebooks are available at Kaggle:
 - https://www.kaggle.com/dimasmunoz/infer-masked-token-with-bert
 
 ### Commands
@@ -61,7 +61,22 @@ In this case, it is necessary to fine-tune BERT. We will use XQuAD (Cross-lingua
 
 ### Code
 
-You can see the code execution step by step in the notebooks (see folder [./notebooks](./notebooks)).
+You can see the code execution step by step in the notebook [Question answering with BERT](./notebooks/Question-answering-with-BERT.ipynb).
 
+## Conditional Text Generation
+
+### Description
+
+The goal of this tasks consists of generating a text about a specific topic or situation. We used two models in this experiment: GPT-2 and a Transformer model.
+
+On the one hand, despite GPT-2 was only trained to predict the next token in a sentence, it surprisingly learned basic competence in some tasks like translating between languages and answering questions. On the other hand, we implemented a basic Transformer encoder-decoder architecture to analyse whether it is able to generate a similar text to the training data.
+
+### Code
+
+There are two notebooks:
+- [Conditional Text Generation with GPT-2](./notebooks/Conditional-Text-Generation-with-GPT-2.ipynb)
+- [Conditional Text Generation with Transformers](./notebooks/Conditional-Text-Generation-with-Transformers.ipynb)
+
+---
 
 Have fun! ᕙ (° ~ ° ~)
