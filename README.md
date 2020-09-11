@@ -1,10 +1,12 @@
 # Experiments with Transformers
 
+> Read article at https://arxiv.org/abs/2009.04968
+
 ## Infer masked token with BERT
 
 ### Description
 
-BERT's authors trained it in two tasks and one of them is **Masked Language Model** (MLM). The task consists of mask some input tokens randomly, and then try to predict those random tokens. Hence, we do not need to pretrain BERT and we can directly test it,
+BERT's authors trained it in two tasks and one of them is **Masked Language Model** (MLM). The task consists of mask some input tokens randomly, and then try to predict those random tokens. Hence, we do not need to pretrain BERT and we can directly test it.
 
 In this repository, I have implemented **a basic script to infer the masked token** in a sentence.
 
